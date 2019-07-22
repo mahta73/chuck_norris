@@ -7,23 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    <!--Header contains logo(Chuck Norris’s specific logo) 
-        and title “Everyone loves Chuck Norris” Random joke section: 
-        There is a dropdown fulfilled with joke categories. 
-        If no category is selected, select first one by default.  -->
-    <div id = 'header'></div>
-    <div id = 'randonJoke'>
-        <select name="jokeCategory" id="jokeCategory" onchange = {app.optionChanged()}>
-
-        </select>
-    </div>
-    <div id = 'search'>
-        <input type="text" placeholder="search..." value="" id = 'searchInput'>
-        <button onclick = {app.textInserted()} >Search</button>
-        <div id = 'matchedJokes'></div>
-    </div>
-
-    <script src = './index.js'>
-    </script>
+    <div id = "main"></div>
+    <script type = "module" src = './js/index.js'></script>
 </body>
 </html>
+
+<!-- <div id = 'randonJoke'>
+                <select name="jokeCategory" id="jokeCategory" onchange = {app.optionChanged()}>
+        
+                </select>
+            </div>
+            <div id = 'search'>
+                <input type="text" placeholder="search..." value="" id = 'searchInput'>
+                <button onclick = {app.textInserted()} >Search</button>
+                <div id = 'matchedJokes'></div>
+            </div> -->
